@@ -43,7 +43,7 @@ Make sure you now call these components in `App.js`. Check your app in the brows
 
 #### Step 3: Pass props to the new components
 
-Pass the films (stored in [TMDB.films](https://github.com/WDI-SEA/react_intro_global/blob/master/TMDB.films)) to each of your new components as props.
+Pass the films (stored in [TMDB.js](https://github.com/WDI-SEA/react_intro_global/blob/master/TMDB.js)) to each of your new components as props.
 
 If you check your file, it still shouldn't look differently. We're sending the props to the components, but we are not using the props yet.
 
