@@ -1,8 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Starting a Film Project
 
-Fork and clone the `react-film` repo.
-
-This project was created with `create-react-app`. Once you have the app cloned, you should run `npm install`. You can then run it with `npm run start`.
+Create a new repo named `react-film` repo. You can then run it with `npm run start`.
 
 ## Your Mission
 
@@ -12,7 +10,7 @@ Today the plan is to identify the app components, create the overall structure, 
 
 ### Tasks
 
-**Importantly**: After each step below, check your application to see how it looks before going to the next one. It's good practice to be sure your app is working correctly before adding new functionality.
+**Important**: After each step below, check your application to see how it looks before going to the next one. It's good practice to be sure your app is working correctly before adding new functionality.
 
 <details>
   <summary>Hint</summary>
