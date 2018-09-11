@@ -1,6 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Starting a Film Project
 
-Create a new repo named `react-film` repo. You can then run it with `npm run start`.
+----->>>>>>>[INSERT STARTER REPO LINK HERE + instructions to clone etc.]
 
 ## Your Mission
 
@@ -37,7 +37,7 @@ Make the provided `App` component render the following code:
 
 #### Step 2: Create new components
 
-Move the `film-list` and `film-details` into their own separate components (in separate files), `FilmListing` and `FilmDetails`, respectively.
+Move the `film-list` and `film-details` divs into their own separate components (in separate files), `FilmListing.js` and `FilmDetails.js`, respectively.
 
 Make sure you now call these components in `App.js`. Check your app in the browser. If you've done it right, nothing will have changed, and the application will look the same.
 
@@ -66,9 +66,7 @@ Does "It" appear on the left side of your browser?
 
 #### Step 5: Create and render an array of film title elements
 
-Use `.map()` inside of the `FilmListing` to iterate over the collection of films and create an element for each one. (Here is the [map documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)).
-
-Then, render the variable `allFilms` underneath the Films `<h1>`.
+In the `render()` of `FilmListing` (above the return), create an `allFilms` variable that uses [`.map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) to iterate over the collection of films and return an element to display the title for each one. Using JSX, display `allFilms` underneath the `<h1> Films </h1>` heading.
 
 You should have a list of all the films appear in the left column.
 
@@ -84,9 +82,6 @@ You should have a list of all the films appear in the left column.
 #### Step 6: Move the film rows to their own component
 
 Create a new component for each film row, called `FilmRow.js`. Have your `map` instead create an array of `FilmRow`s. Don't forget to pass the individual film prop to the component when creating them!
-
-Once you have this working, also pass `film.id` as a `key` prop to `FilmRow`, though you won't use it yet.
-
 
 #### Step 7: Flesh out each film row
 
@@ -105,11 +100,9 @@ Make each film row in the film list look like the main finished image, using the
 
 - You'll have to create the `posterUrl` for each film by combining the prefix `https://image.tmdb.org/t/p/w780/` with each film's `poster_path` property.
 
-- You'll also have to extract the year from the `release_date` property. To do this, you'll need to figure out how to use the [`getFullYear()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear) JS method.
-
 <details>
-  <summary>Hint on <code>getFullYear()</code></summary>
-  <code>getFullYear()</code> will be a single line of new code, and you'll use the keywords <code>new</code> and <code>Date</code>.
+  <summary>Hint</summary>
+  You'll also have to extract the year from the <code>release_date</code> property. To do this, you could use the <code>split()</code> or <code>getFullYear()</code> JS method.
 </details>
 
 
