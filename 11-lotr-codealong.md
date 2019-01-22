@@ -6,7 +6,7 @@ We'll build a simple website that shows title and runtime information about the
 original Lord of the Rings Trilogy.
 
 Specifically, at the end of this lesson, your solution will look like this:
-![Lord of the Rings movie info](images/lord-of-the-rings-final.png)
+![Lord of the Rings movie info](images/lotr.png)
 
 ### Setup
 Create a new react app called `lord-of-the-rings`:
