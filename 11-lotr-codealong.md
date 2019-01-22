@@ -148,13 +148,12 @@ props from inside the component. You can name props pretty much
 anything you want - but it's good practice to be descriptive!
 
 ```js
-<Movie title="The Fellowship of the Ring" hours="2" minutes="58"></Movie>
+<Movie title="The Fellowship of the Ring" hours="2" minutes="58" />
 ```
 We'll be able to read the value of these props from inside the component. You can name props pretty much
 anything you want - but it's good practice to be descriptive!
 
-React gathers
-all of the props we added to the call to `<Movie>` and makes them each available
+React gathers all of the props we added to the call to `<Movie />` and makes them each available
 through the `this.props` object. This means that inside the `Movie` component, we can now access the values of props through
 `this.props.title`, `this.props.hours` and `this.props.minutes`. Remember, we use curly braces `{ }` to display the value of something.
 
@@ -170,17 +169,17 @@ The `render()` function ends up looking like this:
 import React, { Component } from 'react';
 
 class Movie extends Component {
-  render() {
-    return (
-      <div>
-        <h1>The Lord of the Rings: {this.props.title}</h1>
-        <p>{this.props.hours}h {this.props.minutes}min</p>
-      </div>
-    )
-  }
+	render() {
+		return(
+			<div>
+  				<h1>The Lord of the Rings: {this.props.title}</h1>
+  				<p>{this.props.hours}h {this.props.minutes}min</p>
+			</div>
+		)
+	}
 }
 
-export default Movie
+export default Movie;
 ```
 
 Refresh the page and make sure everything works correctly.
@@ -188,22 +187,20 @@ Refresh the page and make sure everything works correctly.
 ### Reusing the Component
 Once you've got props working for one component, then write two more!
 
-In `src/App.js`, call
-the `<Movie>` component again with different values for the `title`, `hours` and `minutes`
+In `src/App.js`, call the `<Movie />` component again with different values for the `title`, `hours` and `minutes`
 properties. Display information for the complete trilogy! (If you don't know everything about Lord of the Rings off the top of your head, here it is).
 
 ```html
-<Movie title="The Fellowship of the Ring" hours="2" minutes="58"></Movie>
-<Movie title="The Two Towers" hours="2" minutes="59"></Movie>
-<Movie title="The Return of the King" hours="3" minutes="21"></Movie>
+<Movie title="The Fellowship of the Ring" hours="2" minutes="58" />
+<Movie title="The Two Towers" hours="2" minutes="59" />
+<Movie title="The Return of the King" hours="3" minutes="21" />
 ```
 
 # Solution
 When you're finished, review the reflections below.
 
 ### Reflecting on Reusability
-Components are great because they allow us to compartmentalize code and easily
-reuse parts we create. We simply set the value of props and the component defines how everything should be displayed.
+Components are great because they allow us to compartmentalize code and easily reuse parts we create. We simply set the value of props and the component defines how everything should be displayed.
 
 In this instance, we factored out some redundancy of the
 movie titles.
