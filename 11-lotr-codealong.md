@@ -9,19 +9,11 @@ Specifically, at the end of this lesson, your solution will look like this:
 ![Lord of the Rings movie info](images/lord-of-the-rings-final.png)
 
 ### Setup
-Open your terminal and use `create-react-app` to spin up another React
-app. Call the application `lord-of-the-rings`:
+Create a new react app called `lord-of-the-rings`:
 
-```
-create-react-app lord-of-the-rings
-```
-
-> Refer to the Initial Setup for a reminder of how to do this; make sure you stop the currently running application first!
-
-Start the app and make sure it appears in the browser with the spinning React
-logo:
-
-```
+``` bash
+npx create-react-app lord-of-the-rings
+cd lord-of-the-rings
 npm start
 ```
 
