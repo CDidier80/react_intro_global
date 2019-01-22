@@ -85,7 +85,7 @@ reload." Let's do that!
 
 Open `src/App.js`.
 
-Add our `<Movie></Movie>` component just after the paragraph. Go back to the
+Add our `<Movie />` component just after the paragraph. Go back to the
 app and see if it appears.
 
 ### Dealing with Errors
@@ -94,7 +94,7 @@ Uh oh. There's an error.
 ```
 Failed to compile
 ./src/App.js
-  Line 16:  'Movie' is not defined  react/jsx-no-undef
+  Line 15:  'Movie' is not defined  react/jsx-no-undef
 ```
 
 `'Movie'` is not defined? Ah.
@@ -106,7 +106,7 @@ Add this import statement with the other imports at the top of
 the `src/App.js` file.
 
 ```
-import Movie from './Movie.js';
+import Movie from './Movie';
 ```
 
 Now you should see the page without the error message, and it should have the
@@ -119,26 +119,25 @@ The entire `App.js` should look like this:
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Movie from './Movie.js';
+import Movie from './Movie';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
+        <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Movie></Movie>
+          <p>
+            Edit <code>src/App.js</code> and save to reload.
+          </p>
+          <Movie />
+        </header>
       </div>
-    )
+    );
   }
 }
 
-export default App
+export default App;
 ```
 
 ### Passing Information via Properties
