@@ -168,4 +168,5 @@ Make each film row in the film list look like the main finished image, using the
 
 #### Step 8: Move film posters to their own component
 
-Since the poster requires you to create the URL first, move those elements to their own component. This could be reusable later. Don't forget to pass the film as a prop to the new `FilmPoster` component.
+* Create a `FilmPoster` component that resceives a `poster_path` prop.
+* Replace the `img` tag in your `FilmRow` component with a `FilmPoster` component that recieves a `poster_path`
