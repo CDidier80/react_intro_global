@@ -72,6 +72,7 @@ If you check your file, it still shouldn't look differently. We're sending the p
     }
 
     export default App;
+    
   </code>
 </details>
 
@@ -102,25 +103,25 @@ Using JSX, display `allFilms` underneath the `<h1 className="section-title">FILM
 You should have a list of all the films appear in the left column.
 
 <details>
-  <summary>Step 3 solution:</summary>
+  <summary>Step 5 solution:</summary>
   <code>
     
     render() {
-    const allFilms = this.props.films.map((film) =>{
+      const allFilms = this.props.films.map((film) =>{
+        return (
+          <div className="film-row">
+            <h1>{film.title}</h1>
+          </div>
+        )
+      })
+      console.log(allFilms)
       return (
-        <div className="film-row">
-          <h1>{film.title}</h1>
-        </div>
-      )
-    })
-    console.log(allFilms)
-    return (
-        <div className="film-list">
-          <h1 className="section-title">FILMS</h1>
-          {allFilms}
-        </div>
-    );
-  }
+          <div className="film-list">
+            <h1 className="section-title">FILMS</h1>
+            {allFilms}
+          </div>
+      );
+    }
   
   </code>
 </details>
