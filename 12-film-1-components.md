@@ -169,4 +169,4 @@ Make each film row in the film list look like the main finished image, using the
 #### Step 8: Move film posters to their own component
 
 * Create a `FilmPoster` component that resceives a `poster_path` prop.
-* Replace the `img` tag in your `FilmRow` component with a `FilmPoster` component that recieves a `poster_path`
+* Replace the `img` tag in your `FilmRow` component with a `FilmPoster` component that receives a `poster_path`
