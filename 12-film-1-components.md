@@ -161,8 +161,8 @@ Make each film row in the film list look like the main finished image, using the
 - You'll have to create the `posterUrl` for each film by combining the prefix `https://image.tmdb.org/t/p/w780/` with each film's `poster_path` property.
 
 <details>
-  <summary>Hint</summary>
-  You'll also have to extract the year from the <code>release_date</code> property. To do this, you could use the <code>split()</code> or <code>getFullYear()</code> JS method.
+  <summary>Hint: getting the year</summary>
+  You'll also have to extract the year from the <code>release_date</code> property. To do this, you could use the <code>split()</code>, <code>substring()</code> or <code>getFullYear()</code> JS method.
 </details>
 
 
