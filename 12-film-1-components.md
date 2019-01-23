@@ -89,15 +89,40 @@ Does "It" appear on the left side of your browser?
 
 #### Step 5: Create and render an array of film title elements
 
-In the `render()` of `FilmListing` (above the return), create an `allFilms` variable that uses [`.map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) to iterate over the collection of films and return an element to display the title for each one. Using JSX, display `allFilms` underneath the `<h1> Films </h1>` heading.
+In the `render()` of `FilmListing` (above the return), create an `allFilms` variable that uses [`.map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) to iterate over the array of films and return an element to display the title for each one:
+
+```js
+  <div className="film-row">
+    <h1>{film.title}</h1>
+  </div>
+```
+
+Using JSX, display `allFilms` underneath the `<h1 className="section-title">FILMS</h1>` heading.
 
 You should have a list of all the films appear in the left column.
 
 <details>
-  <summary>Hint - Need help on <code>map</code>?</summary>
-  This step will look like this in your <code>render</code> method (above the <code>return</code>):
-  <code> let allFilms = this.props.films.map( (film, index) => ( your-jsx-per-film-here ))</code>
-    Then, you'll just need to call <code>{allFilms}</code> in your JSX where you want the titles to appear.
+  <summary>Step 3 solution:</summary>
+  <code>
+    
+    render() {
+    const allFilms = this.props.films.map((film) =>{
+      return (
+        <div className="film-row">
+          <h1>{film.title}</h1>
+        </div>
+      )
+    })
+    console.log(allFilms)
+    return (
+        <div className="film-list">
+          <h1 className="section-title">FILMS</h1>
+          {allFilms}
+        </div>
+    );
+  }
+  
+  </code>
 </details>
 
 
