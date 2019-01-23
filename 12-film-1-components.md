@@ -114,7 +114,6 @@ You should have a list of all the films appear in the left column.
           </div>
         )
       })
-      console.log(allFilms)
       return (
           <div className="film-list">
             <h1 className="section-title">FILMS</h1>
@@ -126,11 +125,23 @@ You should have a list of all the films appear in the left column.
   </code>
 </details>
 
-
-
 #### Step 6: Move the film rows to their own component
 
-Create a new component for each film row, called `FilmRow.js`. Have your `map` instead create an array of `FilmRow`s. Don't forget to pass the individual film prop to the component when creating them!
+Now we're going to move each of these `film-row` divs into a `FilmRow` component.
+
+* Create a `FilmRow.js` component. 
+* Modivy your `allFilms` array so that your `map` function returns a `FilmRow` component.
+* Pass the entire film to each `FilmRow` component as a `film` prop.
+
+<details>
+  <summary>Hint 1: </summary>
+  Don't forget to import <code>FilmRow</code> so you can use it in your <code>map</code> iterator.
+</details>
+
+<details>
+  <summary>Hint 2: </summary>
+  Inside your <code>FilmRow</code> component, <code>film</code> is now, a prop, so you'll need to access it with <code>this.props.film</code>.
+  </details>
 
 #### Step 7: Flesh out each film row
 
