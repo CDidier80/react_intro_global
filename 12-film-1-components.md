@@ -78,7 +78,7 @@ If you check your file, it still shouldn't look differently. We're sending the p
 
 #### Step 4: Render a film
 
-In the `FilmListing` component, render the title of just 1 film as an `<h1>`, below the `section-title`.
+In the `FilmListing` component, render the title of just the first film as an `<h1>`, below the `section-title`.
 
 Does "It" appear on the left side of your browser?
 
